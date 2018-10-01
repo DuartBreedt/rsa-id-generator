@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+
+    <title>ID Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 mt-5 text-center">
+                <button class="btn btn-primary btn-lg generate-random">Random ID</button>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 mt-2 text-center">
+                <input type="text" class="random-id-number form-control" />
+            </div>
+        </div>
+        <hr/>
+        <div class="row mt-2">
+            <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                <div class="card" id="advanced-parent">
+                    <div class="card-header">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#advanced" aria-expanded="true" aria-controls="collapseOne">
+                            <h3>Advanced</h3>
+                        </button>
+                    </div>
+                    <div id="advanced" class="collapse" aria-labelledby="headingOne" data-parent="#advanced-parent">
+                        <div class="card-body">
+                            <div class="col-lg-12 col-md-12 col-sm-12 mt-2">
+                                <div class="card">
+                                    <h3 class="card-header">
+                                        Date of Birth
+                                    </h3>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="year">Year</label>
+                                            <input class="form-control" type="number" id="year" name="year" value="1995" min="1990" max="2000" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="month">Month</label>
+                                            <input class="form-control" type="number" name="month" id="month" value="06" min="1" max="12" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="day">Day</label>
+                                            <input class="form-control" type="number" name="day" id="day" value="26" min="1" max="28" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 mt-2">
+                                <div class="card">
+                                    <h3 class="card-header">
+                                        Gender
+                                    </h3>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <input type="radio" id="male" name="gender" value="male" checked />
+                                            <label for="male">Male</label>
+                                            <input type="radio" id="female" name="gender" value="female" />
+                                            <label for="female">Female</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 mt-2">
+                                <div class="card">
+                                    <h3 class="card-header">
+                                        Citizenship
+                                    </h3>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <input type="radio" id="sa-citizen" name="citizenship" value="sa citizen" checked />
+                                            <label for="sa-citizen">SA Citizen</label>
+                                            <input type="radio" id="permanent-citizen" name="citizenship" value="permanent citizen" />
+                                            <label for="permanent-citizen">Permanent Citizen</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 mt-2 text-center">
+                                <button class="btn btn-primary btn-lg generate-with-info">Generate ID</button>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 mt-2 mb-2 text-center">
+                                <input type="text" class="info-id-number form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+                    crossorigin="anonymous"></script>
+                <script src="generator.js"></script>
+                <script src="script.js"></script>
+</body>
+
+</html>
